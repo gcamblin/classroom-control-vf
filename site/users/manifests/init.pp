@@ -1,5 +1,6 @@
-user { 'fundamentals':
- 			  ensure           => 'present',
+class user {
+{ 'fundamentals':
+ 			   ensure           => 'present',
        gid              => '501',
        home             => '/home/fundamentals',
        password         => '!!',
@@ -8,3 +9,4 @@ user { 'fundamentals':
        shell            => '/bin/bash',
        uid              => '501',
      }
+}
