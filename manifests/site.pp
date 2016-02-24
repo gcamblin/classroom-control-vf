@@ -43,15 +43,5 @@ include users
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-  notify { "Hello, my name is ${::hostname}": }
-   exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd":
-  creates => "/etc/motd",
-  path => "/usr/local/bin",
-  }
-  
-  class { 'skeleton': }
-  $cvirtual=capitalize($::virtual)
-  notify { "Hello my name is ${::hostname} and I am a Virtual  ${cvirtual} and release 12.2" :}
-  
   
 }
