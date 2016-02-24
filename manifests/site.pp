@@ -49,7 +49,7 @@ include users
   path => "/usr/local/bin",
   }
   
-  
+  class { 'skeleton': }
   $cvirtual=capitalize($::virtual)
   notify { "Hello my name is ${::hostname} and I am a Virtual  ${cvirtual} and release 12.2" :}
   
