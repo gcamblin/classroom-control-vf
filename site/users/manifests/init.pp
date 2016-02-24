@@ -1,5 +1,5 @@
-class user {
-{ 'fundamentals':
+class users {
+user { 'fundamentals':
  			   ensure           => 'present',
        gid              => '501',
        home             => '/home/fundamentals',
