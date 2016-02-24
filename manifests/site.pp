@@ -48,4 +48,5 @@ include users
   creates => "/etc/motd",
   path => "/usr/local/bin",
   }
+  notify { "Hello my name is ${::hostname} and I am a Virtual  ${cvirtual} and release 12.2" :}
 }
