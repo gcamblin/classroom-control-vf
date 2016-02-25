@@ -44,4 +44,7 @@ include users
   # Example:
   #   class { 'my_class': }
   
+  $the_message = hiera('message')
+  notify { $the_message:
+  }
 }
